@@ -1,0 +1,19 @@
+[package]
+name = "stardb-exporter"
+version = "1.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+arboard = "3.4.1"
+base64 = "0.22.1"
+clap = { version = "4.5.18", features = ["derive"] }
+pcap = "2.2.0"
+artifactarium = { path = "../artifactarium" }
+self_update = { version = "0.41.0", features = [
+    "archive-zip",
+    "compression-zip-deflate",
+] }
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+ureq = { version = "2.10.1", features = ["json"] }
